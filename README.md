@@ -17,7 +17,7 @@ letters or numbers (i.e., ABCD, 1234, etc.)
 or the same letter or number repeated.
 
 Files: password_gen.py
-## Project 02: Number Guesser
+## Project 02: Integer Guesser
 Used:
 ### Instructions
 1. A random integer is selected randomly within a range.
