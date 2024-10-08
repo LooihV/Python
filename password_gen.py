@@ -15,12 +15,16 @@
 
 from random import choice
 
+# Sets of chars as constants
+
 UPPERCASE = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 LOWERCASE = "abcdefghijklmnopqrstuvwxyz"
 NUMBERS = "1234567890"
 SYMBOLS = "!#$%&/()=?¡¨*[];:_,.-+'¿<>|°¬@̣"
 
 CHARACTER_CHOICE = [UPPERCASE, LOWERCASE, NUMBERS, SYMBOLS]
+
+# Functions
 
 def get_password_length() -> int:
     """
