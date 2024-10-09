@@ -73,7 +73,7 @@ def number_pick(difficulty: int) -> int:
         print("Difficulty set to RANDOM...")
         rand_diff = choice(DIFFICULTY)
         number = randint(rand_diff[0], rand_diff[1])
-        print(f"Random range between {rand_diff(0)} and {rand_diff(1)}."
+        print(f"Random range between {rand_diff[0]} and {rand_diff[1]}."
               "\n ¡Number picked!...")
     
     return number
@@ -119,8 +119,7 @@ def number_guesser(number: int, difficulty: int) -> int:
         int: The amount of attempts used by the user to guess the number
     """
     attempts = 0
-    print(difficulty, type(difficulty))
-    input("xd")
+    
     while True:
         try:
             guess = number_prompt(difficulty)
