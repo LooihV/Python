@@ -29,7 +29,7 @@ CHARACTER_CHOICE = [UPPERCASE, LOWERCASE, NUMBERS, SYMBOLS]
 def get_password_length() -> int:
     """
     This function asks the user for the desired length
-    they want the password to be.
+    they want the password to be (between 12 and 16).
     
     Returns:
         int: password length 
@@ -46,6 +46,8 @@ def get_password_length() -> int:
         else:
             if 12 <= length <= 16:
                 break
+            else:
+                print("The password length must be between 12 and 16")
         
     return length
 
